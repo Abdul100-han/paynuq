@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Section from "../Section";
+import PartnerMarquee from "../PartnerMarquee";
 
 const partners = {
     protocol: [
@@ -22,6 +23,11 @@ const Partners = () => {
     return (
         <Section title="Partners & Tech Stack">
             <div className="max-w-6xl mx-auto px-4">
+                {/* Infinite Scrolling Marquee */}
+                <div className="mb-20">
+                    <PartnerMarquee />
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                     {/* Protocol */}
                     <div className="text-center md:text-left">

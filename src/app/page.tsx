@@ -5,6 +5,7 @@ import WhyItMatters from "@/components/sections/WhyItMatters";
 import HowItWorks from "@/components/sections/HowItWorks";
 import KeyFeatures from "@/components/sections/KeyFeatures";
 import Impact from "@/components/sections/Impact";
+import Gallery from "@/components/Gallery";
 import GovernanceAndTrust from "@/components/sections/GovernanceAndTrust";
 import UseCases from "@/components/sections/UseCases";
 import Partners from "@/components/sections/Partners";
@@ -21,6 +22,7 @@ export default function Home() {
       <HowItWorks />
       <KeyFeatures />
       <Impact />
+      <Gallery />
       <GovernanceAndTrust />
       <UseCases />
       <Partners />
