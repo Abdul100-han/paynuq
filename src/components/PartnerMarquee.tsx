@@ -22,7 +22,7 @@ const PartnerMarquee = () => {
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
 
             <motion.div
-                className="flex gap-12 sm:gap-24 items-center whitespace-nowrap"
+                className="flex gap-12 items-center whitespace-nowrap"
                 animate={{
                     x: ["0%", "-50%"],
                 }}
@@ -30,7 +30,7 @@ const PartnerMarquee = () => {
                     x: {
                         repeat: Infinity,
                         repeatType: "loop",
-                        duration: 25,
+                        duration: 30,
                         ease: "linear",
                     },
                 }}
@@ -39,15 +39,15 @@ const PartnerMarquee = () => {
                 {marqueeLogos.map((logo, index) => (
                     <div
                         key={`${logo.name}-${index}`}
-                        className="flex-shrink-0 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+                        className="flex-shrink-0 flex items-center justify-center transition-all duration-300 cursor-pointer"
                     >
-                        <div className="relative h-12 w-32 sm:h-16 sm:w-48 grayscale hover:grayscale-0 transition-all duration-300">
+                        <div className="relative h-12 w-32 sm:h-16 sm:w-40 transition-all duration-300">
                             <Image
                                 src={logo.src}
                                 alt={logo.name}
                                 fill
                                 className="object-contain"
-                                sizes="(max-width: 768px) 128px, 192px"
+                                sizes="(max-width: 768px) 128px, 160px"
                             />
                         </div>
                     </div>
