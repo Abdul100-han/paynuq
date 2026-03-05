@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const partnerLogos = [
     { src: "/partners/encointer logo.png", name: "Encointer" },
     { src: "/partners/epipy logo.jpeg", name: "Epipy" },
-    { src: "/partners/paynug logo.jpeg", name: "PayNuq" },
+    // { src: "/partners/paynug logo.jpeg", name: "PayNuq" },
     { src: "/partners/usdc logo.png", name: "USDC" },
 ];
 
