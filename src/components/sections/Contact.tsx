@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Twitter } from "lucide-react";
 import Section from "../Section";
 import Button from "../ui/Button";
 
@@ -38,7 +38,25 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <div className="text-xs font-bold text-brand-blue uppercase tracking-widest mb-1">Call Us</div>
-                                    <a href="tel:+2347070563194" className="text-xl font-bold text-gray-900 hover:text-brand-blue transition-colors">+234 707 056 3194</a>
+                                    <div className="text-xl font-bold text-gray-900">+234 707 056 3194</div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-6 group">
+                                <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center border border-gray-100 shadow-sm group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
+                                    <Twitter className="w-6 h-6 text-brand-blue group-hover:text-white" />
+                                </div>
+                                <div>
+                                    <div className="text-xs font-bold text-brand-blue uppercase tracking-widest mb-1">Follow Us</div>
+                                    <a
+                                        href="https://x.com/PayNuq"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="Follow PayNuq on X"
+                                        className="text-xl font-bold text-gray-900 hover:text-brand-blue transition-colors"
+                                    >
+                                        @PayNuq on X
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -88,7 +88,7 @@ const Hero = () => {
                             className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-white/50"
                         >
                             <Image
-                                src="/images/p7.jpeg"
+                                src="/images/hero-image.jpeg"
                                 alt="PayNuq Digital Payment Mockup"
                                 fill
                                 className="object-cover"

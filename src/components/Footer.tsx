@@ -1,6 +1,6 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Twitter } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -12,9 +12,9 @@ const Footer = () => {
                             <Image
                                 src="/paynuglogo.jpeg"
                                 alt="PayNuq Logo"
-                                width={120}
-                                height={34}
-                                className="h-8.5 w-auto"
+                                width={280}
+                                height={80}
+                                className="h-20 w-auto"
                             />
                         </Link>
                         <p className="text-gray-500 max-w-sm mb-6">
@@ -49,19 +49,19 @@ const Footer = () => {
                             <li className="text-gray-600">
                                 +234 707 056 3194
                             </li>
+                            <li className="pt-2">
+                                <a
+                                    href="https://x.com/PayNuq"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Follow PayNuq on X"
+                                    className="flex items-center gap-2 text-gray-600 hover:text-brand-blue transition-colors"
+                                >
+                                    <Twitter className="w-5 h-5" />
+                                    <span className="text-sm">@PayNuq</span>
+                                </a>
+                            </li>
                         </ul>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <a
-                            href="https://x.com/PayNuq"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-400 hover:text-brand-blue transition-colors"
-                        >
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                            </svg>
-                        </a>
                     </div>
                 </div>
             </div>
