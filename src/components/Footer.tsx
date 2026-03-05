@@ -38,8 +38,8 @@ const Footer = () => {
                         <h4 className="text-sm font-bold text-brand-blue uppercase tracking-wider mb-6">Contact</h4>
                         <ul className="space-y-4">
                             <li>
-                                <a href="mailto:Info@paynuq.com" className="text-gray-600 hover:text-brand-blue transition-colors">
-                                    Info@paynuq.com
+                                <a href="mailto:Info@paynuq.xyz" className="text-gray-600 hover:text-brand-blue transition-colors">
+                                    Info@paynuq.xyz
                                 </a>
                             </li>
                             <li className="text-gray-600">

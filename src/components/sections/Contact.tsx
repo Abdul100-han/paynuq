@@ -28,7 +28,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <div className="text-xs font-bold text-brand-blue uppercase tracking-widest mb-1">Email Us</div>
-                                    <a href="mailto:Info@paynuq.com" className="text-xl font-bold text-gray-900 hover:text-brand-blue transition-colors">Info@paynuq.com</a>
+                                    <a href="mailto:Info@paynuq.xyz" className="text-xl font-bold text-gray-900 hover:text-brand-blue transition-colors">Info@paynuq.xyz</a>
                                 </div>
                             </div>
 

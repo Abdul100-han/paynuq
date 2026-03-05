@@ -21,15 +21,15 @@ const partners = {
 
 const Partners = () => {
     return (
-        <Section title="Partners & Tech Stack">
+        <Section title="Partners">
             <div className="max-w-6xl mx-auto px-4">
                 {/* Infinite Scrolling Marquee */}
                 <div className="mb-20">
                     <PartnerMarquee />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    {/* Protocol */}
+                {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    Protocol
                     <div className="text-center md:text-left">
                         <h4 className="text-sm font-bold text-brand-blue uppercase tracking-widest mb-8">Protocol</h4>
                         <div className="space-y-6">
@@ -49,7 +49,7 @@ const Partners = () => {
                         </div>
                     </div>
 
-                    {/* Treasury */}
+                    Treasury
                     <div className="text-center md:text-left">
                         <h4 className="text-sm font-bold text-brand-blue uppercase tracking-widest mb-8">Treasury Backbone</h4>
                         <div className="space-y-6">
@@ -69,7 +69,7 @@ const Partners = () => {
                         </div>
                     </div>
 
-                    {/* Supported By */}
+                    Supported By
                     <div className="text-center md:text-left">
                         <h4 className="text-sm font-bold text-brand-blue uppercase tracking-widest mb-8">Supported By</h4>
                         <div className="space-y-4">
@@ -87,7 +87,7 @@ const Partners = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </Section>
     );

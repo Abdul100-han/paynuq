@@ -23,7 +23,7 @@ export default function Home() {
       <KeyFeatures />
       <Impact />
       <Gallery />
-      <GovernanceAndTrust />
+      {/* <GovernanceAndTrust /> */}
       <UseCases />
       <Partners />
       <Contact />

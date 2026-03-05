@@ -27,13 +27,14 @@ const Hero = () => {
                             transition={{ delay: 0.2, duration: 0.5 }}
                             className="inline-block px-3 py-1 rounded-full bg-brand-blue/10 text-brand-blue text-xs font-bold uppercase tracking-widest mb-6"
                         >
-                            Institutional Infrastructure
+                            {/* Institutional Infrastructure */}
                         </motion.div>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] mb-6 tracking-tight">
                             Empowering Local Economies with <span className="text-brand-blue font-heading tracking-normal">Digital Money</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-500 max-w-2xl mb-10 leading-relaxed font-sans">
-                            A community-centric payment architecture powered by blockchain and real-world participation. Built for institutions, developers, and economic partners.
+                            A community-centric payment architecture powered by blockchain and real-world participation.
+                            {/* Built for institutions, developers, and economic partners. */}
                         </p>
                         <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
                             <Button size="lg">Institutional Brief</Button>
@@ -41,15 +42,15 @@ const Hero = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}
                         className="flex-1 w-full max-w-[600px]"
-                    >
-                        <div className="relative aspect-square md:aspect-[4/3] rounded-2xl bg-brand-blue/5 border border-brand-blue/10 overflow-hidden shadow-2xl shadow-brand-blue/5">
-                            {/* Placeholder for abstract illustration or community commerce image */}
-                            <div className="absolute inset-0 flex items-center justify-center p-12">
+                    > */}
+                    {/* <div className="relative aspect-square md:aspect-[4/3] rounded-2xl bg-brand-blue/5 border border-brand-blue/10 overflow-hidden shadow-2xl shadow-brand-blue/5"> */}
+                    {/* Placeholder for abstract illustration or community commerce image */}
+                    {/* <div className="absolute inset-0 flex items-center justify-center p-12">
                                 <div className="w-full h-full border-2 border-dashed border-brand-blue/20 rounded-xl flex items-center justify-center">
                                     <span className="text-brand-blue/40 font-medium">Community Commerce Illustration</span>
                                 </div>
@@ -64,8 +65,8 @@ const Hero = () => {
                                     <div className="ml-auto text-brand-blue font-bold">+$42.50</div>
                                 </div>
                             </div>
-                        </div>
-                    </motion.div>
+                        </div> */}
+                    {/* </motion.div> */}
                 </div>
             </div>
         </section>
