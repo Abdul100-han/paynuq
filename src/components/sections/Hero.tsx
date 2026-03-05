@@ -70,7 +70,9 @@ const Hero = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.7, duration: 0.6 }}
                             >
-                                <Button variant="outline" size="lg" className="border-gray-300 hover:bg-gray-100 transition-colors">Contact Us</Button>
+                                <a href="mailto:paynuq@gmail.com?subject=PayNuq%20PayNuq%20Inquiry">
+                                    <Button variant="outline" size="lg" className="border-gray-300 hover:bg-gray-100 transition-colors">Contact Us</Button>
+                                </a>
                             </motion.div>
                         </div>
                     </motion.div>

@@ -7,6 +7,26 @@ import Section from "../Section";
 import Button from "../ui/Button";
 
 const Contact = () => {
+    const [formData, setFormData] = React.useState({
+        name: "",
+        org: "",
+        email: "",
+        message: ""
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { id, value } = e.target;
+        setFormData(prev => ({ ...prev, [id]: value }));
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const { name, org, email, message } = formData;
+        const subject = encodeURIComponent("PayNuq Website Inquiry");
+        const body = encodeURIComponent(`Name: ${name}\nOrganization: ${org}\nEmail: ${email}\n\nMessage:\n${message}`);
+        window.location.href = `mailto:paynuq@gmail.com?subject=${subject}&body=${body}`;
+    };
+
     return (
         <Section id="contact" title="Let’s Collaborate" dark>
             <div className="max-w-6xl mx-auto px-4">
@@ -28,7 +48,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <div className="text-xs font-bold text-brand-blue uppercase tracking-widest mb-1">Email Us</div>
-                                    <a href="mailto:Info@paynuq.xyz" className="text-xl font-bold text-gray-900 hover:text-brand-blue transition-colors">Info@paynuq.xyz</a>
+                                    <a href="mailto:paynuq@gmail.com" className="text-xl font-bold text-gray-900 hover:text-brand-blue transition-colors">paynuq@gmail.com</a>
                                 </div>
                             </div>
 
@@ -77,15 +97,18 @@ const Contact = () => {
                         transition={{ duration: 0.6 }}
                         className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl"
                     >
-                        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label htmlFor="name" className="text-sm font-bold text-gray-700">Name</label>
                                     <input
                                         type="text"
                                         id="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10 outline-none transition-all"
                                         placeholder="Your name"
+                                        required
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -93,6 +116,8 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         id="org"
+                                        value={formData.org}
+                                        onChange={handleChange}
                                         className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10 outline-none transition-all"
                                         placeholder="Your organization"
                                     />
@@ -103,8 +128,11 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10 outline-none transition-all"
                                     placeholder="name@organization.com"
+                                    required
                                 />
                             </div>
                             <div className="space-y-2">
@@ -112,8 +140,11 @@ const Contact = () => {
                                 <textarea
                                     id="message"
                                     rows={4}
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10 outline-none transition-all resize-none"
                                     placeholder="Tell us about your project or interest..."
+                                    required
                                 />
                             </div>
                             <Button type="submit" className="w-full" size="lg">Send Message</Button>
