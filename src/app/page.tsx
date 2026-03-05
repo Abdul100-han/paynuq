@@ -22,7 +22,7 @@ export default function Home() {
       <HowItWorks />
       <KeyFeatures />
       <Impact />
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <GovernanceAndTrust /> */}
       <UseCases />
       <Partners />

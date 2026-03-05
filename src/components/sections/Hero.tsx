@@ -2,16 +2,27 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Button from "../ui/Button";
 
 const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
-            {/* Background Enhancement */}
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-100 -z-10" />
+            {/* Background Image with Overlay */}
+            <div className="absolute inset-0 -z-10">
+                <Image
+                    src="/images/p2.jpeg"
+                    alt="Community Meeting Background"
+                    fill
+                    className="object-cover opacity-30"
+                    priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-white via-white/80 to-blue-50/40" />
+            </div>
 
-            {/* Decorative Blob */}
-            <div className="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-3xl -z-10" />
+            {/* Decorative Blobs */}
+            <div className="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-brand-blue/10 rounded-full blur-3xl -z-10" />
+            <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-blue-100/20 rounded-full blur-3xl -z-10" />
 
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
@@ -70,50 +81,34 @@ const Hero = () => {
                         transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
                         className="flex-1 w-full max-w-[500px] relative"
                     >
-                        {/* Floating Card Mockup */}
+                        {/* Supporting Product Visual */}
                         <motion.div
-                            animate={{ y: [0, -15, 0] }}
-                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                            className="bg-white/80 backdrop-blur-xl border border-white p-6 rounded-3xl shadow-2xl shadow-blue-500/10 relative z-10"
+                            animate={{ y: [0, -12, 0] }}
+                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                            className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/10 border border-white/50"
                         >
-                            <div className="flex items-center justify-between mb-6">
-                                <div className="p-3 bg-blue-600 rounded-2xl text-white">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="5" width="20" height="14" rx="2" /><line x1="2" y1="10" x2="22" y2="10" /></svg>
-                                </div>
-                                <span className="text-xs font-bold text-gray-400">MERCHANT PAYMENT</span>
-                            </div>
-
-                            {/* <div className="space-y-4">
-                                <div className="flex items-center justify-between">
-                                    <span className="text-sm text-gray-500">Service</span>
-                                    <span className="text-sm font-bold text-gray-900">PayNuq Transaction</span>
-                                </div>
-                                <div className="py-4 border-y border-gray-50">
-                                    <div className="text-3xl font-bold text-gray-900">₦4,200</div>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <div className="w-2 h-2 bg-green-500 rounded-full" />
-                                    <span className="text-xs font-medium text-gray-500 italic">Verified Community Node</span>
-                                </div>
-                            </div> */}
+                            <Image
+                                src="/images/p7.jpeg"
+                                alt="PayNuq Digital Payment Mockup"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 500px"
+                            />
+                            {/* Sophisticated Overlay for the image */}
+                            <div className="absolute inset-0 bg-blue-600/5 mix-blend-overlay" />
                         </motion.div>
 
-                        {/* Decorative floating elements */}
-                        {/* <motion.div
-                            animate={{ y: [0, 10, 0] }}
-                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                            className="absolute -top-6 -right-6 w-12 h-12 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 shadow-lg"
-                        >
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
-                        </motion.div> */}
-                        {/* <motion.div
-                            animate={{ y: [0, -10, 0] }}
-                            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                            className="absolute -bottom-4 -left-4 px-4 py-2 bg-white rounded-xl shadow-xl flex items-center gap-2 border border-gray-50"
-                        >
-                            <div className="w-2 h-2 bg-blue-600 rounded-full" />
-                            <span className="text-[10px] font-bold text-gray-900 uppercase">Local Node Verified</span>
-                        </motion.div> */}
+                        {/* Subtle decorative elements */}
+                        <motion.div
+                            animate={{ scale: [1, 1.05, 1] }}
+                            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                            className="absolute -top-4 -right-4 w-24 h-24 bg-blue-100/30 rounded-full blur-2xl -z-10"
+                        />
+                        <motion.div
+                            animate={{ scale: [1, 1.1, 1] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                            className="absolute -bottom-8 -left-8 w-32 h-32 bg-brand-blue/5 rounded-full blur-3xl -z-10"
+                        />
                     </motion.div>
                 </div>
             </div>
