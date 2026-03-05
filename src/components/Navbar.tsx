@@ -37,10 +37,10 @@ const Navbar = () => {
                     <Image
                         src="/paynuglogo.jpeg"
                         alt="PayNuq Logo"
-                        width={140}
-                        height={40}
+                        width={280}
+                        height={80}
                         priority
-                        className="h-10 w-auto"
+                        className="h-20 w-auto"
                     />
                 </Link>
 
@@ -57,7 +57,10 @@ const Navbar = () => {
                             </Link>
                         ))}
                     </div>
-                    <Button size="sm">Institutional Brief</Button>
+                    <div className="flex items-center gap-4">
+
+                        <Button size="sm">Institutional Brief</Button>
+                    </div>
                 </div>
 
                 {/* Mobile Toggle */}

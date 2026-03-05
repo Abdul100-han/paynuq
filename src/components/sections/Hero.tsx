@@ -11,7 +11,7 @@ const Hero = () => {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 -z-10">
                 <Image
-                    src="/images/p2.jpeg"
+                    src="/images/hero-image.jpeg"
                     alt="Community Meeting Background"
                     fill
                     className="object-cover opacity-30"
