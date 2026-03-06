@@ -59,7 +59,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex items-center gap-4">
 
-                        <Button size="sm">Institutional Brief</Button>
+                        {/* <Button size="sm">Institutional Brief</Button> */}
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
                                 {link.name}
                             </Link>
                         ))}
-                        <Button className="w-full mt-4">Institutional Brief</Button>
+                        {/* <Button className="w-full mt-4">Institutional Brief</Button> */}
                     </motion.div>
                 )}
             </AnimatePresence>

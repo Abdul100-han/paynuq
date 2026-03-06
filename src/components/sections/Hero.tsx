@@ -63,7 +63,7 @@ const Hero = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.6, duration: 0.6 }}
                             >
-                                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 transition-colors">Institutional Brief</Button>
+                                {/* <Button size="lg" className="bg-blue-600 hover:bg-blue-700 transition-colors">Institutional Brief</Button> */}
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
