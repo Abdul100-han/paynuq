@@ -18,14 +18,14 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Impact />
       <WhyItMatters />
       <HowItWorks />
       <KeyFeatures />
-      <Impact />
-      {/* <Gallery /> */}
-      {/* <GovernanceAndTrust /> */}
+      <GovernanceAndTrust />
       <UseCases />
       <Partners />
+      <Gallery />
       <Contact />
       <Footer />
     </main>
