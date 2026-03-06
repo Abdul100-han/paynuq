@@ -61,7 +61,7 @@ const Counter = ({ value, prefix = "", suffix = "" }: { value: number; prefix?: 
 
 const Impact = () => {
     return (
-        <Section id="impact" title="Impact" dark>
+        <Section id="impact" title="Traction" dark>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
                 {stats.map((stat, index) => (
                     <motion.div
