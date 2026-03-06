@@ -37,10 +37,10 @@ const Navbar = () => {
                     <Image
                         src="/paynuglogo.jpeg"
                         alt="PayNuq Logo"
-                        width={350}
-                        height={100}
+                        width={600}
+                        height={200}
                         priority
-                        className="h-[55px] md:h-[85px] w-auto transition-all"
+                        className="h-[90px] md:h-[160px] w-auto transition-all"
                     />
                 </Link>
 
